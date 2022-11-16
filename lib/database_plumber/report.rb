@@ -24,7 +24,7 @@ module DatabasePlumber
       REPORT
     end
 
-    private_class_method def self.print_leak(model, count)
+    private_class_method def self.print_leak(model, count = 1)
       puts "     - #{HighLine.color(count.to_s, :blue)} row(s) for the #{model} model \n"
     end
 
